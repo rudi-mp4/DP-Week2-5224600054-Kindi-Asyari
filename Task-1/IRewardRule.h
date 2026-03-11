@@ -14,4 +14,11 @@ public:
     }
 };
 
+class BonusRewardRule : public IRewardRule {
+public:
+    int computeReward(int baseScore) override {
+        return baseScore + 2;
+    }
+};
+
 #endif

@@ -14,6 +14,15 @@ public:
     virtual TurnInput generate() = 0;
 };
 
+class FixedInputGenerator : public IInputGenerator {
+public:
+    TurnInput generate() override {
+        TurnInput input;
+        input.value = 5;
+        return input;
+    }
+};
+
 class RandomInputGenerator : public IInputGenerator {
 public:
     RandomInputGenerator() {

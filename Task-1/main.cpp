@@ -3,7 +3,7 @@
 int main() {
     RandomInputGenerator inputGen;
     BasicScoringRule scoringRule;
-    BasicRewardRule rewardRule;
+    BonusRewardRule rewardRule;
     ShopSystem shop;
 
     RunSession session(inputGen, scoringRule, rewardRule, shop);
